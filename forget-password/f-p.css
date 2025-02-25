@@ -1,0 +1,133 @@
+    /* CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #b3e0ff, #ffb3e6);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 450px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transform: translateY(-20px);
+      animation: slideIn 1s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .forgot-password-box {
+      color: #333;
+    }
+
+    h1 {
+      color: #ff6b81;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 10px rgba(255, 107, 129, 0.7);
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    p {
+      color: #777;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 2px solid #ff6b81;
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s ease, transform 0.2s ease;
+    }
+
+    input:focus {
+      border-color: #ff4c76;
+      transform: scale(1.05);
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #ff4c76;
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out forwards;
+    }
+
+    .back-link a {
+      color: #ff6b81;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .back-link a:hover {
+      color: #ff4c76;
+      text-decoration: underline;
+    }
